@@ -1,0 +1,82 @@
+        .hero-pattern {
+            background-image: radial-gradient(circle at 25px 25px, rgba(255,255,255,0.2) 2%, transparent 0%), 
+                              radial-gradient(circle at 75px 75px, rgba(255,255,255,0.2) 2%, transparent 0%);
+            background-size: 100px 100px;
+        }
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+.btn-custom {
+    background-color: #FD6F00!important;
+    border-color: #FD6F00!important;
+    color: white !important;
+}
+.btn-outline:hover {
+    background-color: #FD6F00 !important;
+    border-color: #FD6F00 !important;
+    color: white !important;
+}
+
+.btn-custom:hover {
+    background-color: #FD6F00 !important;
+    border-color: #FD6F00 !important;
+}
+.menu-horizontal li a:hover {
+    background-color: transparent !important;
+    border-bottom: #FD6F00 3px solid;
+}
+
+.progress-custom {
+    background-color: #e5e7eb !important;
+}
+
+.progress-custom::-webkit-progress-bar {
+    background-color: #e5e7eb !important;
+}
+
+.progress-custom::-webkit-progress-value {
+    background-color: #FD6F00 !important;
+}
+
+.progress-custom::-moz-progress-bar {
+    background-color: #FD6F00 !important;
+}
+
+/* Style personnalisé pour les barres de progression backend */
+.progress-backend {
+    background-color: #e5e7eb !important;
+    
+}
+
+.progress-backend::-webkit-progress-bar {
+    background-color: #e5e7eb !important;
+}
+
+.progress-backend::-webkit-progress-value {
+    background-color: #29235C !important;
+    
+}
+
+.progress-backend::-moz-progress-bar {
+    background-color: #29235C !important;
+    border-radius: 9999px;
+}
+
+
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, -15px); }
+            100% { transform: translate(0, -0px); }
+        }
+
+
