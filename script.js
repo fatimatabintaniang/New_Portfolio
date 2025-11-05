@@ -82,3 +82,28 @@
                 }
             });
         });
+
+        // Fonction pour envoyer l'email
+function sendEmail(form) {
+    const name = form.name.value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+    
+    // Votre adresse email
+    const yourEmail = "fatimaniang788@gmail.com";
+    
+    // Construction du lien mailto
+    const mailtoLink = `mailto:${yourEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+    
+    // Ouverture du client email
+    window.location.href = mailtoLink;
+    
+    // Réinitialisation du formulaire (optionnel)
+    form.reset();
+    
+    // Message de confirmation
+    alert("Votre client email va s'ouvrir. Veuillez envoyer le message.");
+}

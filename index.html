@@ -32,10 +32,10 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        
+
             <a class="btn btn-ghost text-xl font-bold">
-    <img src="./img/image 2.png" class="w-[70%] hidden lg:block" alt="Logo">
-</a>
+                <img src="./img/image 2.png" class="w-[70%] hidden lg:block" alt="Logo">
+            </a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -53,7 +53,7 @@
                     Télécharger mon CV
                 </a>
             </div>
-   
+
             <button class="btn btn-ghost btn-circle" id="theme-toggle">
                 <i class=" fas fa-sun"></i>
             </button>
@@ -79,7 +79,10 @@
                 </p>
                 <div class="flex gap-4">
                     <a href="#projets" class="btn btn-custom">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                    <a href="tel:+221767298266" class="btn btn-outline">
+                        <i class="fas fa-phone mr-2"></i>
+                        Me contacter
+                    </a>
                 </div>
                 <div class="flex gap-4 mt-6">
                     <a href="#" class="btn btn-circle btn-outline">
@@ -97,124 +100,67 @@
     </section>
 
     <!-- Section À propos -->
-<section id="apropos" class="hero min-h-screen hero-pattern">
-    <div class="hero-content flex-col">
-        <!-- Titre principal -->
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">À propos de moi</h2>
-            <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
-        </div>
-
-        <div class="flex flex-col lg:flex-row items-center gap-12">
-            <!-- Image -->
-            <div class="flex-1 max-w-md">
-                <div class="floating">
-                    <img src="./img/Group 43.png" alt="Photo de profil Fatimata Binta Niang" />
-                </div>
+    <section id="apropos" class="hero min-h-screen hero-pattern">
+        <div class="hero-content flex-col w-full px-4">
+            <div class="text-center mb-8 lg:mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">À propos de moi</h2>
+                <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
             </div>
 
-            <!-- Contenu -->
-            <div class="flex-1 max-w-2xl">
-                <!-- Introduction -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-semibold mb-4">Mon parcours</h3>
-                    <p class="mb-4 text-lg leading-relaxed">
-                        Développeuse full stack passionnée avec 2 ans d'expérience dans la création d'applications web modernes et performantes.
-                    </p>
-                    <p class="mb-4 text-lg leading-relaxed">
-                        J'ai eu l'opportunité de travailler sur divers projets, allant des sites vitrines élégants aux applications web complexes, 
-                        toujours avec un focus sur l'excellence technique et l'expérience utilisateur.
-                    </p>
-                </div>
-
-                <!-- Spécialisations -->
-                <!-- <div class="mb-8">
-                    <h4 class="text-xl font-semibold mb-3">Mes spécialités</h4>
-                    <p class="text-lg">
-                        Je me spécialise dans les technologies modernes comme <strong>React</strong>, <strong>Node.js</strong> 
-                        et les bases de données <strong>NoSQL</strong>. J'accorde une grande importance à l'expérience 
-                        utilisateur, aux performances et au code maintenable.
-                    </p>
-                </div> -->
-
-                <!-- Statistiques -->
-                <div class="stats shadow mt-8">
-                    <div class="stat">
-                        <div class="stat-figure text-[#FD6F00]">
-                            <i class="fas fa-code text-3xl"></i>
-                        </div>
-                        <div class="stat-title">Projets réalisés</div>
-                        <div class="stat-value">30+</div>
-                        <div class="stat-desc">Depuis 2022</div>
-                    </div>
-                    
-                    <div class="stat">
-                        <div class="stat-figure text-[#29235C]">
-                            <i class="fas fa-users text-3xl"></i>
-                        </div>
-                        <div class="stat-title">Clients satisfaits</div>
-                        <div class="stat-value">10</div>
-                        <div class="stat-desc">↗︎ 5 cette année</div>
+            <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 w-full max-w-full">
+                <div class="flex-1 w-full max-w-md mx-auto">
+                    <div class="floating">
+                        <img src="./img/Group 43.png" alt="Photo de profil Fatimata Binta Niang"
+                            class="w-full max-w-md mx-auto" />
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-    <!-- Section À propos -->
-    <!-- <section id="apropos" class="py-20 bg-base-100 ">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 ">À propos de moi</h2>
-            <div class="flex flex-col lg:flex-row gap-12 items-center">
-                <div class="max-w-md flex-1 ">
-                    <div class="floating ">
-                        <img src="./img/Group 43.png" class="" alt="Photo de profil" />
+                <div class="flex-1 w-full max-w-full lg:max-w-2xl">
+                    <div class="mb-6 lg:mb-8 text-center lg:text-left">
+                        <h3 class="text-xl lg:text-2xl font-semibold mb-4">Mon parcours</h3>
+                        <p class="mb-4 text-base lg:text-lg leading-relaxed">
+                            Développeuse full stack passionnée avec 2 ans d'expérience dans la création d'applications
+                            web modernes et performantes.
+                        </p>
+                        <p class="mb-4 text-base lg:text-lg leading-relaxed">
+                            J'ai eu l'opportunité de travailler sur divers projets, allant des sites vitrines élégants
+                            aux applications web complexes,
+                            toujours avec un focus sur l'excellence technique et l'expérience utilisateur.
+                        </p>
                     </div>
-                </div>
-                <div class="flex-1">
-                    <h3 class="text-2xl font-semibold mb-4">Mon parcours</h3>
-                    <p class="mb-4">
-                        Développeur full stack avec 2 ans d'expérience dans la création d'applications web.
-                        J'ai travaillé sur divers projets allant des sites vitrines aux applications complexes.
-                    </p>
-                    <p class="mb-4">
-                        Je suis spécialisé dans les technologies modernes comme React, Node.js et les bases de données
-                        NoSQL.
-                        J'accorde une grande importance à l'expérience utilisateur et à la performance.
-                    </p>
-                    <div class="stats shadow mt-6">
-                        <div class="stat">
+
+                    <!-- Statistiques -->
+                    <div class="stats shadow mt-6 lg:mt-8 flex flex-col lg:flex-row w-full">
+                        <div class="stat w-full lg:w-auto">
                             <div class="stat-figure text-[#FD6F00]">
-                                <i class="fas fa-code text-3xl"></i>
+                                <i class="fas fa-code text-2xl lg:text-3xl"></i>
                             </div>
                             <div class="stat-title">Projets réalisés</div>
-                            <div class="stat-value">30</div>
+                            <div class="stat-value text-2xl lg:text-3xl">30+</div>
                             <div class="stat-desc">Depuis 2022</div>
                         </div>
-                        <div class="stat">
+
+                        <div class="stat w-full lg:w-auto">
                             <div class="stat-figure text-[#29235C]">
-                                <i class="fas fa-users text-3xl"></i>
+                                <i class="fas fa-users text-2xl lg:text-3xl"></i>
                             </div>
                             <div class="stat-title">Clients satisfaits</div>
-                            <div class="stat-value">10</div>
+                            <div class="stat-value text-2xl lg:text-3xl">10</div>
                             <div class="stat-desc">↗︎ 5 cette année</div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Section Compétences -->
     <section id="competences" class="py-20 bg-base-200">
         <div class="container mx-auto px-4">
-             <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">Mes compétences</h2>
-            <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
-        </div>
-            <!-- <h2 class="text-4xl font-bold text-center mb-12">Mes compétences</h2> -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Mes compétences</h2>
+                <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Compétences Frontend -->
                 <div class="card bg-base-100 shadow-xl">
@@ -314,11 +260,10 @@
     <!-- Section Projets -->
     <section id="projets" class="py-20 bg-base-100">
         <div class="container mx-auto px-4">
-            <!-- <h2 class="text-4xl font-bold text-center mb-12">Mes projets</h2> -->
-             <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">Mes projets</h2>
-            <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
-        </div>
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Mes projets</h2>
+                <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Projet 1 -->
                 <div class="card bg-base-200 shadow-xl project-card">
@@ -351,7 +296,9 @@
                     </figure>
                     <div class="card-body">
                         <h3 class="card-title">Application web de Gestion des cours et des absences de l’École 221</h3>
-                        <p>Le projet s’inscrit dans une démarche de digitalisation des processus éducatifs, permettant à chaque acteur de l’école – Responsable Pédagogique, Professeurs, Attachés de classe et Étudiants – d’interagir efficacement via une interface centralisée, simple et intuitive.</p>
+                        <p>Le projet s’inscrit dans une démarche de digitalisation des processus éducatifs, permettant à
+                            chaque acteur de l’école – Responsable Pédagogique, Professeurs, Attachés de classe et
+                            Étudiants – d’interagir efficacement via une interface centralisée, simple et intuitive.</p>
                         <div class="card-actions justify-end mt-4">
                             <div class="badge badge-outline">PHP</div>
                             <div class="badge badge-outline">MySQL</div>
@@ -371,7 +318,9 @@
                     </figure>
                     <div class="card-body">
                         <h3 class="card-title">Application de gestion des biens et reservation</h3>
-                        <p>Plateforme complète de gestion immobilière permettant la location et réservation de biens avec système de calendrier, gestion des disponibilités, paiements sécurisés et interface administrateur avancée.</p>
+                        <p>Plateforme complète de gestion immobilière permettant la location et réservation de biens
+                            avec système de calendrier, gestion des disponibilités, paiements sécurisés et interface
+                            administrateur avancée.</p>
                         <div class="card-actions justify-end mt-4">
                             <div class="badge badge-outline">PHP</div>
                             <div class="badge badge-outline">PostgreSQL</div>
@@ -391,54 +340,56 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="py-20 bg-base-200">
-        <div class="container mx-auto px-4">
-            <!-- <h2 class="text-4xl font-bold text-center mb-12">Contactez-moi</h2> -->
-             <div class="text-center mb-16">
+<section id="contact" class="py-20 bg-base-200">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">Contactez-moi</h2>
             <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
         </div>
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="flex-1">
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Envoyez-moi un message</h3>
-                            <form id="contact-form" class="space-y-4">
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Votre nom</span>
-                                    </label>
-                                    <input type="text" placeholder="Votre nom" class="input input-bordered" required />
-                                </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Votre email</span>
-                                    </label>
-                                    <input type="email" placeholder="votre@email.com" class="input input-bordered"
-                                        required />
-                                </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Sujet</span>
-                                    </label>
-                                    <input type="text" placeholder="Sujet du message" class="input input-bordered"
-                                        required />
-                                </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Message</span>
-                                    </label>
-                                    <textarea class="textarea textarea-bordered h-24" placeholder="Votre message"
-                                        required></textarea>
-                                </div>
-                                <div class="form-control mt-6">
-                                    <button type="submit" class="btn btn-custom">Envoyer le message</button>
-                                </div>
-                            </form>
-                        </div>
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="flex-1">
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Envoyez-moi un message</h3>
+                        <form id="contact-form" class="space-y-4" onsubmit="sendEmail(this); return false;">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Votre nom</span>
+                                </label>
+                                <input type="text" name="name" placeholder="Votre nom" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Votre email</span>
+                                </label>
+                                <input type="email" name="email" placeholder="votre@email.com" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Sujet</span>
+                                </label>
+                                <input type="text" name="subject" placeholder="Sujet du message" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Message</span>
+                                </label>
+                                <textarea name="message" class="textarea textarea-bordered h-24" placeholder="Votre message"
+                                    required></textarea>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button type="submit" class="btn btn-custom">
+                                    <i class="fas fa-paper-plane mr-2"></i>
+                                    Envoyer le message
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="flex-1">
+            </div>
+           <div class="flex-1">
                     <div class="card bg-base-100 shadow-xl h-full">
                         <div class="card-body">
                             <h3 class="card-title mb-4">Informations de contact</h3>
@@ -490,9 +441,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer footer-center p-10 bg-base-300 text-base-content">
@@ -503,10 +454,11 @@
         </aside>
         <nav>
             <div class="grid grid-flow-col gap-4">
-                <a href="#" class="link link-hover">À propos</a>
-                <a href="#" class="link link-hover">Compétences</a>
-                <a href="#" class="link link-hover">Projets</a>
-                <a href="#" class="link link-hover">Contact</a>
+                <a href="#accueil" class="link link-hover">Accueil</a>
+                <a href="#apropos" class="link link-hover">À propos</a>
+                <a href="#competences" class="link link-hover">Compétences</a>
+                <a href="#projets" class="link link-hover">Projets</a>
+                <a href="#contact" class="link link-hover">Contact</a>
             </div>
         </nav>
         <nav>
@@ -521,4 +473,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
