@@ -25,6 +25,7 @@
                     </svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+                    
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#apropos">À propos</a></li>
                     <li><a href="#competences">Compétences</a></li>
@@ -34,10 +35,11 @@
             </div>
 
             <a class="btn btn-ghost text-xl font-bold">
-                <img src="./img/image 2.png" class="w-[70%] hidden lg:block" alt="Logo">
+                <p class="hidden lg:block"><span class="text-[#FD6F00] ">Fatimata Binta</span> Niang</p>
             </a>
         </div>
         <div class="navbar-center hidden lg:flex">
+            
             <ul class="menu menu-horizontal px-1">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
@@ -50,7 +52,7 @@
             <div class="card-actions justify-end ">
                 <a href="./img/cv.pdf" class="btn btn-sm btn-custom">
                     <i class="fas fa-download "></i>
-                    Télécharger mon CV
+                    Télécharger  CV
                 </a>
             </div>
 
@@ -257,87 +259,232 @@
         </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projets" class="py-20 bg-base-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Mes projets</h2>
-                <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 -->
-                <div class="card bg-base-200 shadow-xl project-card">
-                    <figure class="px-4 pt-4">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-                            alt="Projet e-commerce" class="rounded-xl h-48 w-full object-cover" />
-                    </figure>
-                    <div class="card-body">
-                        <h3 class="card-title">Application de gestion de bibliothèque en ligne</h3>
-                        <p>Ce projet a pour objectif de faciliter l’accès des étudiants et
-                            enseignants aux documents académiques (cours, mémoires, livres
-                            électroniques), tout en assurant une gestion efficace des ressources
-                            et des droits d’utilisation.</p>
-                        <div class="card-actions justify-end mt-4">
-                            <div class="badge badge-outline">JavaScript</div>
-                            <div class="badge badge-outline">Tailwind</div>
-                            <div class="badge badge-outline">Json Serveur</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <button class="btn btn-custom btn-sm">Voir le projet</button>
-                        </div>
-                    </div>
-                </div>
+<!-- Section Projets -->
+<section id="projets" class="py-20 bg-base-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Mes projets</h2>
+            <div class="w-24 h-1 bg-[#FD6F00] mx-auto"></div>
+        </div>
 
-                <!-- Projet 2 -->
-                <div class="card bg-base-200 shadow-xl project-card">
-                    <figure class="px-4 pt-4">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Application de gestion" class="rounded-xl h-48 w-full object-cover" />
-                    </figure>
-                    <div class="card-body">
-                        <h3 class="card-title">Application web de Gestion des cours et des absences de l’École 221</h3>
-                        <p>Le projet s’inscrit dans une démarche de digitalisation des processus éducatifs, permettant à
-                            chaque acteur de l’école – Responsable Pédagogique, Professeurs, Attachés de classe et
-                            Étudiants – d’interagir efficacement via une interface centralisée, simple et intuitive.</p>
-                        <div class="card-actions justify-end mt-4">
-                            <div class="badge badge-outline">PHP</div>
-                            <div class="badge badge-outline">MySQL</div>
-                            <div class="badge badge-outline">Tailwind</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <button class="btn btn-custom btn-sm">Voir le projet</button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Filtres -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12" id="filters">
+            <button class="btn btn-sm btn-custom active" data-filter="all">Tous</button>
+            <button class="btn btn-sm btn-outline" data-filter="frontend">Frontend</button>
+            <button class="btn btn-sm btn-outline" data-filter="backend">Backend</button>
+            <button class="btn btn-sm btn-outline" data-filter="fullstack">Full Stack</button>
+            <button class="btn btn-sm btn-outline" data-filter="javascript">JavaScript</button>
+            <button class="btn btn-sm btn-outline" data-filter="php">PHP</button>
+            <button class="btn btn-sm btn-outline" data-filter="java">Java</button>
+        </div>
 
-                <!-- Projet 3 -->
-                <div class="card bg-base-200 shadow-xl project-card">
-                    <figure class="px-4 pt-4">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Réseau social" class="rounded-xl h-48 w-full object-cover" />
-                    </figure>
-                    <div class="card-body">
-                        <h3 class="card-title">Application de gestion des biens et reservation</h3>
-                        <p>Plateforme complète de gestion immobilière permettant la location et réservation de biens
-                            avec système de calendrier, gestion des disponibilités, paiements sécurisés et interface
-                            administrateur avancée.</p>
-                        <div class="card-actions justify-end mt-4">
-                            <div class="badge badge-outline">PHP</div>
-                            <div class="badge badge-outline">PostgreSQL</div>
-                            <div class="badge badge-outline">Daisyui</div>
-                        </div>
-                        <div class="card-actions justify-end mt-4">
-                            <button class="btn btn-custom btn-sm">Voir le projet</button>
-                        </div>
+        <!-- Conteneur des projets (les 3 premiers visibles par défaut) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+            <!-- Projet 1 -->
+            <div class="card bg-base-200 shadow-xl project-card" data-category="frontend javascript">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                        alt="Projet e-commerce" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Application de gestion de bibliothèque en ligne</h3>
+                    <p>Ce projet a pour objectif de faciliter l’accès des étudiants et
+                        enseignants aux documents académiques (cours, mémoires, livres
+                        électroniques), tout en assurant une gestion efficace des ressources
+                        et des droits d’utilisation.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">JavaScript</div>
+                        <div class="badge badge-outline">Tailwind</div>
+                        <div class="badge badge-outline">Json Serveur</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-12">
-                <button class="btn btn-outline">Voir tous mes projets</button>
+            <!-- Projet 2 -->
+            <div class="card bg-base-200 shadow-xl project-card" data-category="fullstack php">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Application de gestion" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Application web de Gestion des cours et des absences de l'École 221</h3>
+                    <p>Le projet s'inscrit dans une démarche de digitalisation des processus éducatifs, permettant à
+                        chaque acteur de l'école – Responsable Pédagogique, Professeurs, Attachés de classe et
+                        Étudiants – d'interagir efficacement via une interface centralisée, simple et intuitive.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">PHP</div>
+                        <div class="badge badge-outline">MySQL</div>
+                        <div class="badge badge-outline">Tailwind</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="card bg-base-200 shadow-xl project-card" data-category="fullstack php">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Réseau social" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Application de gestion des biens et réservation</h3>
+                    <p>Plateforme complète de gestion immobilière permettant la location et réservation de biens
+                        avec système de calendrier, gestion des disponibilités, paiements sécurisés et interface
+                        administrateur avancée.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">PHP</div>
+                        <div class="badge badge-outline">PostgreSQL</div>
+                        <div class="badge badge-outline">Daisyui</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projets supplémentaires (cachés par défaut) -->
+            
+            <!-- Projet 4 -->
+            <div class="card bg-base-200 shadow-xl project-card hidden" data-category="backend java">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Application Java" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Système de gestion de commandes</h3>
+                    <p>Application desktop Java avec interface Swing pour la gestion des commandes clients,
+                        stocks et facturation pour une PME locale.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">Java</div>
+                        <div class="badge badge-outline">Swing</div>
+                        <div class="badge badge-outline">MySQL</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 5 -->
+            <div class="card bg-base-200 shadow-xl project-card hidden" data-category="frontend javascript">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                        alt="Dashboard" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Dashboard analytique</h3>
+                    <p>Tableau de bord interactif avec visualisations de données en temps réel,
+                        graphiques dynamiques et reporting personnalisé.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">JavaScript</div>
+                        <div class="badge badge-outline">Chart.js</div>
+                        <div class="badge badge-outline">API REST</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 6 -->
+            <div class="card bg-base-200 shadow-xl project-card hidden" data-category="fullstack php">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="E-commerce" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Plateforme e-commerce</h3>
+                    <p>Site de vente en ligne avec catalogue produit, panier d'achat,
+                        système de paiement et interface administrateur complète.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">PHP</div>
+                        <div class="badge badge-outline">Laravel</div>
+                        <div class="badge badge-outline">Stripe API</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 7 -->
+            <div class="card bg-base-200 shadow-xl project-card hidden" data-category="backend java">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="API REST" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">API REST pour application mobile</h3>
+                    <p>Développement d'une API REST sécurisée avec authentification JWT pour
+                        une application mobile de réservation de services.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">Java</div>
+                        <div class="badge badge-outline">Spring Boot</div>
+                        <div class="badge badge-outline">JWT</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 8 -->
+            <div class="card bg-base-200 shadow-xl project-card hidden" data-category="frontend javascript">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                        alt="Jeu web" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Jeu éducatif en ligne</h3>
+                    <p>Jeu interactif pour l'apprentissage des langues avec système de scores,
+                        niveaux de difficulté et suivi de progression.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">JavaScript</div>
+                        <div class="badge badge-outline">Canvas API</div>
+                        <div class="badge badge-outline">LocalStorage</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 9 -->
+            <div class="card bg-base-200 shadow-xl project-card hidden" data-category="fullstack php">
+                <figure class="px-4 pt-4">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Gestion de contenu" class="rounded-xl h-48 w-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <h3 class="card-title">Système de gestion de contenu (CMS)</h3>
+                    <p>CMS personnalisé avec éditeur WYSIWYG, gestion des utilisateurs et
+                        des rôles, et système de plugins extensible.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <div class="badge badge-outline">PHP</div>
+                        <div class="badge badge-outline">MySQL</div>
+                        <div class="badge badge-outline">TinyMCE</div>
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn btn-custom btn-sm">Voir le projet</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Bouton "Voir tous mes projets" / "Voir moins" -->
+        <div class="text-center mt-12">
+            <button id="show-all-projects" class="btn btn-outline">
+                <i class="fas fa-chevron-down mr-2"></i>
+                Voir tous mes projets
+            </button>
+        </div>
+    </div>
+</section>
 
     <!-- Section Contact -->
 <section id="contact" class="py-20 bg-base-200">
@@ -412,7 +559,7 @@
                                     <i class="fas fa-envelope text-[#29235C] text-xl mt-1 mr-4"></i>
                                     <div>
                                         <h4 class="font-semibold">Email</h4>
-                                        <p>fatimatabintaniang788@gmail.com</p>
+                                        <p>fatimatabintaniang8@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start">
